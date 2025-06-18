@@ -27,7 +27,7 @@
     "create-app-template": "yarn app-store create-template",
     "edit-app-template": "yarn app-store edit-template",
     "delete-app-template": "yarn app-store delete-template",
-    "build": "turbo run build --filter=@calcom/web...",
+    "build": "turbo run build --filter=@calcom/web --verbose"
     "build:ai": "turbo run build --scope=\"@calcom/ai\"",
     "clean": "find . -name node_modules -o -name .next -o -name .turbo -o -name dist -type d -prune | xargs rm -rf",
     "db-deploy": "turbo run db-deploy",
@@ -148,10 +148,10 @@
       "prisma format"
     ]
   },
-  "engines": {
-    "node": ">=18.x",
-    "npm": ">=8.0.0",
-    "yarn": "3.4.1"
+ "engines": {
+  "node": ">=18.17.0",
+  "npm": ">=9.6.0"
+   "yarn": "3.4.1"
   },
   "prisma": {
     "schema": "packages/prisma/schema.prisma",
